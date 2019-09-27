@@ -4,13 +4,13 @@ describe '#reverse_each_word' do
   let(:sentence1) { "Hello there, and how are you?" }
   it 'reverses all the words in a string without reversing the order of the words' do
  expect |:sentence1| 
- puts(reverse_each_word.map.each(sentence1)).to eq("olleH ,ereht dna woh era ?uoy")
+ puts(reverse_each_word.map.each(sentence1)).to eq?("olleH ,ereht dna woh era ?uoy")
   end
 
   let(:sentence2) { "Hi again, just making sure it's reversed!" }
   it 'reverses all the words in another string without reversing the order of the words' do
    expect|:sentence2| 
-   puts(reverse_each_word.map.each(sentence2)).to eq("iH ,niaga tsuj gnikam erus s'ti !desrever")
+   puts(reverse_each_word.map.each(sentence2)).to eq?("iH ,niaga tsuj gnikam erus s'ti !desrever")
   end
 
   it 'uses collect' do
